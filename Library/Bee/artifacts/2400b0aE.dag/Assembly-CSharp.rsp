@@ -349,9 +349,12 @@
 -analyzer:"/home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/CharacterMovement].cs"
+"Assets/Scripts/EnemyGeneration.cs"
+"Assets/Scripts/EnemyHealth.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/GridManager.cs"
 "Assets/Scripts/PlacementManager.cs"
+"Assets/Scripts/Turret.cs"
 -langversion:9.0
 /deterministic
 /optimize+
