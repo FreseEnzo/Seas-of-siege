@@ -10,10 +10,10 @@ Available memory:        15692 MB
 Using pre-set license
 Pro License: YES
 
-(Unity:16045): Gtk-CRITICAL **: 08:49:30.439: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
+(Unity:368886): Gtk-CRITICAL **: 16:02:24.545: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
 
-(Unity:16045): GLib-GObject-CRITICAL **: 08:49:30.439: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
-Desktop is 2560 x 1440 @ 60 Hz
+(Unity:368886): GLib-GObject-CRITICAL **: 16:02:24.545: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Desktop is 4480 x 1440 @ 60 Hz
 Initialize udev device monitor.
 
 COMMAND LINE ARGUMENTS:
@@ -28,7 +28,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-40755
+45371
 Successfully changed project path to: /home/frese/TowerDefence
 /home/frese/TowerDefence
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -62,15 +62,14 @@ Successfully changed project path to: /home/frese/TowerDefence
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [136700364338176]  Target information:
+Player connection [139373146797056]  Target information:
 
-Player connection [136700364338176]  * "[IP] 172.15.3.174 [Port] 0 [Flags] 2 [Guid] 4036713032 [EditorId] 4036713032 [Version] 1048832 [Id] LinuxEditor(16,172.15.3.174) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [139373146797056]  * "[IP] 192.168.0.51 [Port] 0 [Flags] 2 [Guid] 2229555415 [EditorId] 2229555415 [Version] 1048832 [Id] LinuxEditor(16,192.168.0.51) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [136700364338176] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [136700364338176] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [139373146797056] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [139373146797056] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-Unable to load player prefs
-Refreshing native plugins compatible for Editor in 1.16 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
 [Subsystems] Discovering subsystems at path /home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Resources/UnitySubsystems
@@ -87,50 +86,50 @@ L_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_ob
 _10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_depth_bounds_test GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_
 decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_const_bandwidth GL_MESA_texture_signed_rgba GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV
 _texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -343952032
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 868618272
 Initialize mono
 Mono path[0] = '/home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Managed'
 Mono path[1] = '/home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56045
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56886
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.003539 seconds.
-- Loaded All Assemblies, in  0.218 seconds
+Registered in 0.008284 seconds.
+- Loaded All Assemblies, in  0.230 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.194 seconds
-Domain Reload Profiling: 412ms
+- Finished resetting the current domain, in  0.188 seconds
+Domain Reload Profiling: 419ms
 	BeginReloadAssembly (50ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
+		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (98ms)
-		LoadAssemblies (49ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (50ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (96ms)
-				TypeCache.ScanAssembly (87ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (91ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (194ms)
+	FinalizeReload (189ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (157ms)
+		SetupLoadedEditorAssemblies (154ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (108ms)
+			ProcessInitializeOnLoadAttributes (106ms)
 			ProcessInitializeOnLoadMethodAttributes (35ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -140,7 +139,7 @@ Domain Reload Profiling: 412ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.381 seconds
+- Loaded All Assemblies, in  0.390 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -148,47 +147,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.378 seconds
-Domain Reload Profiling: 758ms
-	BeginReloadAssembly (87ms)
+- Finished resetting the current domain, in  0.397 seconds
+Domain Reload Profiling: 788ms
+	BeginReloadAssembly (84ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
+		CreateAndSetChildDomain (17ms)
 	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (236ms)
-		LoadAssemblies (157ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (167ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (119ms)
-			TypeCache.Refresh (105ms)
-				TypeCache.ScanAssembly (95ms)
-			ScanForSourceGeneratedMonoScriptInfo (10ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (108ms)
+				TypeCache.ScanAssembly (97ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (378ms)
+	FinalizeReload (398ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (272ms)
+		SetupLoadedEditorAssemblies (281ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (39ms)
-			ProcessInitializeOnLoadAttributes (205ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (202ms)
 			ProcessInitializeOnLoadMethodAttributes (18ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (3ms)
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3089 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (45.4 KB). Loaded Objects now: 3555.
-Memory consumption went from 116.8 MB to 116.8 MB.
-Total: 3.416016 ms (FindLiveObjects: 0.148853 ms CreateObjectMapping: 0.074612 ms MarkObjects: 3.066000 ms  DeleteObjects: 0.125644 ms)
+Unloading 3091 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.2 KB). Loaded Objects now: 3557.
+Memory consumption went from 116.9 MB to 116.8 MB.
+Total: 3.614066 ms (FindLiveObjects: 0.198736 ms CreateObjectMapping: 0.108300 ms MarkObjects: 3.165667 ms  DeleteObjects: 0.139922 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -204,20 +203,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2894.346615 seconds.
-  path: Assets/kenney_tower-defense-kit/Sample.png
-  artifactKey: Guid(4a71af7179d512bcc8de549b046ca49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Sample.png using Guid(4a71af7179d512bcc8de549b046ca49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 56978.609361 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_split.obj
+  artifactKey: Guid(e24211156feb1e4648c96190eda32364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_split.obj using Guid(e24211156feb1e4648c96190eda32364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd1beaf0d946ac127263f68d19a17a997') in 0.039037 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6d3d90956dffcda053fc06794c1b8885') in 0.127184 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
-  Time since last request: 3.895400 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/detail_crystalLarge.dae
-  artifactKey: Guid(f3ac7cf4bf5d267d3add861ac226de0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/detail_crystalLarge.dae using Guid(f3ac7cf4bf5d267d3add861ac226de0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000017 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverBridge.obj
+  artifactKey: Guid(9882bb20f84bc1f23b587ac2a0cd0363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverBridge.obj using Guid(9882bb20f84bc1f23b587ac2a0cd0363) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
@@ -225,105 +229,30 @@ Start importing Assets/kenney_tower-defense-kit/Models/DAE format/detail_crystal
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '5e4650cd52c4dbffee609f62a181a5a0') in 0.220218 seconds
+ -> (artifact id: 'c08cfc068b3314cbdfb2bf4ab211daf4') in 0.027356 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
+Number of asset objects unloaded after import = 13
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_treeLarge.dae
-  artifactKey: Guid(f9c972eb76c8d6890b489aa79429ab68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_treeLarge.dae using Guid(f9c972eb76c8d6890b489aa79429ab68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000020 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_transition.obj
+  artifactKey: Guid(c0ecaec1201c26f7e81259b6bb493ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_transition.obj using Guid(c0ecaec1201c26f7e81259b6bb493ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '28079cecd0651b84d9b0ae1fd839915a') in 0.023066 seconds
+ -> (artifact id: '844cb68f2c3d522d91202187d3e06c8f') in 0.023024 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_transition.dae
-  artifactKey: Guid(1727951500b0ba00ab86b675ae1a4526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_transition.dae using Guid(1727951500b0ba00ab86b675ae1a4526) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7d2c35481d77fed1a1d988ead651f51a') in 0.018405 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_bump.dae
-  artifactKey: Guid(92c2cc94eea08c5bbaa012badbbe5603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_bump.dae using Guid(92c2cc94eea08c5bbaa012badbbe5603) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'daca1f9b019c93139caf1593ea6dc829') in 0.017436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_woodStructure_high.dae
-  artifactKey: Guid(07c357b9f3741f9f9877d7681c16e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_woodStructure_high.dae using Guid(07c357b9f3741f9f9877d7681c16e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'eb605027f87e334085affc13cf3a4ae1') in 0.015256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
   Time since last request: 0.000013 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_wideSplit.dae
-  artifactKey: Guid(4c13ca82e70f669e8a9d1304a0fcb24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_wideSplit.dae using Guid(4c13ca82e70f669e8a9d1304a0fcb24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1418dec6bb02a7ced4528d7cb597f374') in 0.018133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/tile.dae
-  artifactKey: Guid(4274ae359da315025a2cffd4232edaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/tile.dae using Guid(4274ae359da315025a2cffd4232edaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2c068f426a0404d0e39398edf35ec5c8') in 0.011135 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_hill.dae
-  artifactKey: Guid(c674ca97693bf57fe9ecd8fbab4fe6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_hill.dae using Guid(c674ca97693bf57fe9ecd8fbab4fe6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoYellowWeapon.obj
+  artifactKey: Guid(868b848a63f3fb6b0a9ab613e51ba101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoYellowWeapon.obj using Guid(868b848a63f3fb6b0a9ab613e51ba101) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
@@ -332,70 +261,162 @@ Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_hill
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2a698eaaf30b2dfe4ecc7b02e46399ee') in 0.020978 seconds
+ -> (artifact id: 'b655268bc449debddff843b0ea40cc02') in 0.026854 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 17
 ========================================================================
 Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_straightHillLarge.obj
+  artifactKey: Guid(8d57fc6491c0ff42a9b3a8620fbdf09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_straightHillLarge.obj using Guid(8d57fc6491c0ff42a9b3a8620fbdf09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e9d880c62cc26414c9865825f0897e12') in 0.025042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverCorner.obj
+  artifactKey: Guid(aa7cac67fc693a1c98e7ab9f29568f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverCorner.obj using Guid(aa7cac67fc693a1c98e7ab9f29568f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2b43f52751f8bdf0b05cc90c2156438b') in 0.018477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_tree.obj
+  artifactKey: Guid(c71d970a173d4d9878361dc8898cf0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_tree.obj using Guid(c71d970a173d4d9878361dc8898cf0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b71267c95e871c823ea0dc4a88fad1e3') in 0.028908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_spawnRound.obj
+  artifactKey: Guid(3cac94df460505f25b31686740de0da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_spawnRound.obj using Guid(3cac94df460505f25b31686740de0da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '51e98a86a387cf7cfae732a00e081c0f') in 0.028896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_spawn.obj
+  artifactKey: Guid(51a00f70cee75497b9906d50622efe5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_spawn.obj using Guid(51a00f70cee75497b9906d50622efe5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e4dab0ae77ee64e3fefea84c4f69ce25') in 0.030876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_bump.obj
+  artifactKey: Guid(09a6564943ba5a4f3888c2c6f999e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_bump.obj using Guid(09a6564943ba5a4f3888c2c6f999e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a5fbff8626384582a45e87646cb48d3e') in 0.019925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_crystalLarge.obj
+  artifactKey: Guid(64dc1e0c6fea84f99bd9311503cabd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_crystalLarge.obj using Guid(64dc1e0c6fea84f99bd9311503cabd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '79c35ef4768ee7a96f20c02dbf7a322e') in 0.024689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_woodStructure_high.obj
+  artifactKey: Guid(70434aa2697566970ac987688f93ac80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_woodStructure_high.obj using Guid(70434aa2697566970ac987688f93ac80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ab17f5053b3f468e5c64590316c1d842') in 0.017151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
   Time since last request: 0.000014 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_slope.dae
-  artifactKey: Guid(580836c6d548aa3df9d35e24e42cbd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_slope.dae using Guid(580836c6d548aa3df9d35e24e42cbd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_treeLarge.obj
+  artifactKey: Guid(7357fe5f571130b6dbf7746907f59a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_treeLarge.obj using Guid(7357fe5f571130b6dbf7746907f59a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2d6bfae5e28ddc87ffee3c492b124bce') in 0.015584 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e2bb50ea0d5c06bc5836628b98c4e2cb') in 0.022339 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
+Number of asset objects unloaded after import = 13
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_dirt.dae
-  artifactKey: Guid(0ceea7b6f07b77c81abf43b6fda84181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_dirt.dae using Guid(0ceea7b6f07b77c81abf43b6fda84181) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '9dba41627dc25b45bba494184c728328') in 0.015708 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/tile_cornerSquare.dae
-  artifactKey: Guid(ca100c70a7f1be23fb38440acadfe277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/tile_cornerSquare.dae using Guid(ca100c70a7f1be23fb38440acadfe277) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'b55eebc0d352c504ce54ff3bb426f094') in 0.017433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_straightHill.dae
-  artifactKey: Guid(819f264d1b42078f1ac4081bbd2f2e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_straightHill.dae using Guid(819f264d1b42078f1ac4081bbd2f2e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7e224ebcd60e9f47cc0e66b782f60af4') in 0.017540 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_treeQuad.dae
-  artifactKey: Guid(c91164ad7d7200dbaa48870410842d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_treeQuad.dae using Guid(c91164ad7d7200dbaa48870410842d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000034 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_crystal.obj
+  artifactKey: Guid(2435ee015f1ee3ee69a243b85e9e8f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_crystal.obj using Guid(2435ee015f1ee3ee69a243b85e9e8f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
@@ -407,183 +428,15 @@ Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_tree
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd1508ccc9a0778a05bb78b6838759d0e') in 0.042178 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_wideTransition.dae
-  artifactKey: Guid(030da4da56a4e160d942f70eead5ad2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_wideTransition.dae using Guid(030da4da56a4e160d942f70eead5ad2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '0c5455e7590a02133d16c7c251d94cc5') in 0.019095 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/tile_cornerOuter.dae
-  artifactKey: Guid(e539ec2caefd03403891bf6baa1103af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/tile_cornerOuter.dae using Guid(e539ec2caefd03403891bf6baa1103af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '4fe69f1bede32cb2081eefc73f9f11ce') in 0.011631 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_end.dae
-  artifactKey: Guid(b96aee9c3172e7c1f8d80362cf0a11be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_end.dae using Guid(b96aee9c3172e7c1f8d80362cf0a11be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'db307e850ba2a1b4fca3ed0f400b7f9d') in 0.018880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/detail_tree.dae
-  artifactKey: Guid(5c18db757d742e023bddef444f63d17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/detail_tree.dae using Guid(5c18db757d742e023bddef444f63d17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'aadbbc12615ed9f9f4aab15b70a14d64') in 0.020358 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/detail_dirt.dae
-  artifactKey: Guid(c38da018be806004d864267af8ca50c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/detail_dirt.dae using Guid(c38da018be806004d864267af8ca50c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'cff90eea5534d5a74ddc085a5bb0acaa') in 0.011576 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/enemy_ufoYellowWeapon.dae
-  artifactKey: Guid(43a8ecc9db6b7d5bd9bf898c6fe60b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/enemy_ufoYellowWeapon.dae using Guid(43a8ecc9db6b7d5bd9bf898c6fe60b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7a1931221b824d0841b2f4e642dd8859') in 0.031856 seconds
+ -> (artifact id: 'de3cf974ea9a2a6f0aba1884807c53b0') in 0.034766 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 23
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_riverTransition.dae
-  artifactKey: Guid(2aa4e2fbf8dc3738393a13b5f55bbf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_riverTransition.dae using Guid(2aa4e2fbf8dc3738393a13b5f55bbf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '39f14dfa57179f8e03ddfdb94669d22f') in 0.022393 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_tree.dae
-  artifactKey: Guid(b2d9408f02a7fa0a7bcf98cad33451b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_tree.dae using Guid(b2d9408f02a7fa0a7bcf98cad33451b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'b44a6bdc69bc5f429001acf1cb136522') in 0.036549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/tile_cornerInner.dae
-  artifactKey: Guid(def17b0d8bc638eacbea06b8b0c1f68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/tile_cornerInner.dae using Guid(def17b0d8bc638eacbea06b8b0c1f68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '8fb069198311c57f38bf57b108e945cd') in 0.018922 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/detail_rocksLarge.dae
-  artifactKey: Guid(c77beb7610ce8403e961cc40b4bca25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/detail_rocksLarge.dae using Guid(c77beb7610ce8403e961cc40b4bca25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e21aaedea16b065543eaa07a20daab68') in 0.010484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_crystalLarge.dae
-  artifactKey: Guid(ba9f113ce1e4a9539913a26b7379ae72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_crystalLarge.dae using Guid(ba9f113ce1e4a9539913a26b7379ae72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'cdc462fd6ddf72ea8816e7582b3a5dd4') in 0.040335 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/enemy_ufoPurpleWeapon.dae
-  artifactKey: Guid(65372262bc4e9020f8385b08e31e6380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/enemy_ufoPurpleWeapon.dae using Guid(65372262bc4e9020f8385b08e31e6380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_hill.obj
+  artifactKey: Guid(eef279d10be73f043a0fe48513579639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_hill.obj using Guid(eef279d10be73f043a0fe48513579639) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
@@ -592,643 +445,239 @@ Start importing Assets/kenney_tower-defense-kit/Models/DAE format/enemy_ufoPurpl
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2c8c5e5a5cff42c924406f1f1c9b961f') in 0.025322 seconds
+ -> (artifact id: '6c253518f24be84ec7b92faa8c54f0f2') in 0.031081 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 17
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_dirtLarge.dae
-  artifactKey: Guid(3fb64a4a7af7a559e977f795cdc4185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_dirtLarge.dae using Guid(3fb64a4a7af7a559e977f795cdc4185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000063 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerLarge.obj
+  artifactKey: Guid(9da32e4bc9a4c78baae9147cd2868e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerLarge.obj using Guid(9da32e4bc9a4c78baae9147cd2868e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'b8b6d65d899dc6b7039ab62b890c1560') in 0.013520 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e7d52ee173095fa46eb25a40c45089b5') in 0.026213 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_rock.dae
-  artifactKey: Guid(8769d4bdb272f46ca8d20b01ec33a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_rock.dae using Guid(8769d4bdb272f46ca8d20b01ec33a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '29bc2f0904ad1e7910535baee2fb2276') in 0.026802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 13
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_riverSlopeLarge.dae
-  artifactKey: Guid(a79d281dc763c777d9f6d9c91187f7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_riverSlopeLarge.dae using Guid(a79d281dc763c777d9f6d9c91187f7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_treeQuad.obj
+  artifactKey: Guid(20fab62efe0fd54eca13a9832927e61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_treeQuad.obj using Guid(20fab62efe0fd54eca13a9832927e61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '9cdd82ca067e5f1e5ce894da0c3c46b3') in 0.026820 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b11730a25d3da9d5cc39918051971925') in 0.033081 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 18
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_cornerRound.dae
-  artifactKey: Guid(be2feec3b7142773cafb518f9ebcf3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_cornerRound.dae using Guid(be2feec3b7142773cafb518f9ebcf3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000020 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_wideCorner.obj
+  artifactKey: Guid(f4dcd06704e7a1fa68efa9d78961f4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_wideCorner.obj using Guid(f4dcd06704e7a1fa68efa9d78961f4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '118288724d0a29d9e75dfad08f9b417e') in 0.022817 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '41b4d67d14b6ff673824b6b6269c16e1') in 0.024127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_woodStructure.obj
+  artifactKey: Guid(a5727885a072f7c2bbb74ca99d116e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_woodStructure.obj using Guid(a5727885a072f7c2bbb74ca99d116e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c3f8b70d60eca16fa52f3d967bc9498f') in 0.017335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_endRound.obj
+  artifactKey: Guid(bf831c2c487b4cebb9bc56d7cee038d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_endRound.obj using Guid(bf831c2c487b4cebb9bc56d7cee038d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7498a89c3a30e7741b9d3e8b3a685d43') in 0.019985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 29.948999 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/tile_wideSplit.obj
+  artifactKey: Guid(5edf3c8364b2721a3b5c243e769a7f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/tile_wideSplit.obj using Guid(5edf3c8364b2721a3b5c243e769a7f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '35b914104a9f02487a56d9265efbbe64') in 0.026173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_base.obj
+  artifactKey: Guid(8d4d7147170c26d96868f1879e506255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_base.obj using Guid(8d4d7147170c26d96868f1879e506255) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b6cce8e01ef71b1434bc9685d7c6391d') in 0.015667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.290109 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleA.obj
+  artifactKey: Guid(70e20a43eaf135a0f9ac8a3107aee253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleA.obj using Guid(70e20a43eaf135a0f9ac8a3107aee253) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cbc4284c2f328b2bd79c6b90ecc6c271') in 0.017776 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_crystal.dae
-  artifactKey: Guid(90291b2886d9ea1ae8dac1fd0b541c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_crystal.dae using Guid(90291b2886d9ea1ae8dac1fd0b541c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleC.obj
+  artifactKey: Guid(c122ec8b15a8cc31988be927435cec22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleC.obj using Guid(c122ec8b15a8cc31988be927435cec22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '867877380b747e2beb7baf8c2084a0e8') in 0.042656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 32
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_riverBridge.dae
-  artifactKey: Guid(c7952e7f5178b2df09b570c2e81b757b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_riverBridge.dae using Guid(c7952e7f5178b2df09b570c2e81b757b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '92ca9d8644e3c76254fbb2237fc45070') in 0.019418 seconds
+ -> (artifact id: '00c0089f76f50fa54ed99532af039f55') in 0.019152 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format
-  artifactKey: Guid(14a3979c27804e3eca5d7299b953a677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format using Guid(14a3979c27804e3eca5d7299b953a677) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '5e69b5d47554699d2dbc2d33b923a392') in 0.000174 seconds
+  Time since last request: 0.044777 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleC.obj
+  artifactKey: Guid(ee61bb5897ce1a581a8304181f4214ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleC.obj using Guid(ee61bb5897ce1a581a8304181f4214ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6889956585d878aba0fe55648dc12208') in 0.020438 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_wideStraight.dae
-  artifactKey: Guid(a50e04dac801b7372997b4dbea2a2a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_tile_wideStraight.dae using Guid(a50e04dac801b7372997b4dbea2a2a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '38bcf7a76a73b960b1b988af04d6b009') in 0.019687 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_crystal.dae
-  artifactKey: Guid(ed4d7c1950afda99ebab2e69ac1bfdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Models/DAE format/snow_detail_crystal.dae using Guid(ed4d7c1950afda99ebab2e69ac1bfdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '81b5c3eb61fe4429d59d92a74ac33bea') in 0.018654 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 15.894156 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/detail_dirtLarge.png
-  artifactKey: Guid(56ab38f050c87d602814459732251690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/detail_dirtLarge.png using Guid(56ab38f050c87d602814459732251690) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'eec26223d851d863e117b9bc9d23bb8b') in 0.004548 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/enemy_ufoGreenWeapon.png
-  artifactKey: Guid(9ac10875515a38d57a66c68f40a8fae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/enemy_ufoGreenWeapon.png using Guid(9ac10875515a38d57a66c68f40a8fae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c62f87ae4773f96c855c48aa493282fa') in 0.003351 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_detail_dirtLarge.png
-  artifactKey: Guid(5c81ff1f58e8d36fb884eae4f4271899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_detail_dirtLarge.png using Guid(5c81ff1f58e8d36fb884eae4f4271899) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e33fe0381e47c4f73c19c364727266e6') in 0.002880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_detail_dirt.png
-  artifactKey: Guid(b288e82623ddc216ab322392adb1627e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_detail_dirt.png using Guid(b288e82623ddc216ab322392adb1627e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'f890b3374cc427dfa843d718e85b4e60') in 0.004148 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_crossing.png
-  artifactKey: Guid(827c7e06ab15a03e5afe48d23c3dd42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_crossing.png using Guid(827c7e06ab15a03e5afe48d23c3dd42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '01e410ef9d73e6c454b02a667f33cf07') in 0.003736 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_cornerOuter.png
-  artifactKey: Guid(63870f836360160a7bc3641e6c2c8e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_cornerOuter.png using Guid(63870f836360160a7bc3641e6c2c8e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'cad77eb130593a178ead6ea5af1fa827') in 0.002878 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_riverSlopeLarge.png
-  artifactKey: Guid(152c34bde2da17dfba4574c8940e5668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_riverSlopeLarge.png using Guid(152c34bde2da17dfba4574c8940e5668) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1a21f61c87c0572bd4242e32563b01be') in 0.003496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_endRoundSpawn.png
-  artifactKey: Guid(30c1271ff2da6c51fa5c42cc1123e705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_endRoundSpawn.png using Guid(30c1271ff2da6c51fa5c42cc1123e705) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e56dd2f0fecbbff700c0c54b8f31d0fd') in 0.002495 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_straight.png
-  artifactKey: Guid(4a61d9a8dde6d78b897b8c64fe2fcd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_straight.png using Guid(4a61d9a8dde6d78b897b8c64fe2fcd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2a8d30446617b23bceadc535efb6baa3') in 0.002611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_cornerRound.png
-  artifactKey: Guid(52e326399caca9b398eedebe04ffd758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_cornerRound.png using Guid(52e326399caca9b398eedebe04ffd758) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '5dc4596cf0292f41bd89e9115facdf17') in 0.002827 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_treeQuad.png
-  artifactKey: Guid(4c0df2c8fa50aeaa4bd9dd3ad917cca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_treeQuad.png using Guid(4c0df2c8fa50aeaa4bd9dd3ad917cca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '822e7b69a75a96bb7e22f7bdba1b0b62') in 0.003396 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_wideCorner.png
-  artifactKey: Guid(0f72798803c8aa27cab81dd32d558842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_wideCorner.png using Guid(0f72798803c8aa27cab81dd32d558842) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2434cf4f9eea8a7e52067ac4b0dafc81') in 0.002798 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_riverBridge.png
-  artifactKey: Guid(d9bbb060ccd68910fbbeea1dee5925ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_riverBridge.png using Guid(d9bbb060ccd68910fbbeea1dee5925ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '59993c8df9c70671dd0d533c8a82f8e7') in 0.002838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_cornerRound.png
-  artifactKey: Guid(d2b66548e3914d2b2b189e31ff07c857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_cornerRound.png using Guid(d2b66548e3914d2b2b189e31ff07c857) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '99077ac4f60ab83e9192dd67eaeac09d') in 0.003215 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_riverTransition.png
-  artifactKey: Guid(a54a460ebffa73a1a87d761c6df9cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_riverTransition.png using Guid(a54a460ebffa73a1a87d761c6df9cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '8fedf6b80e70d1d0373df13cf56c2611') in 0.002755 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_cornerLarge.png
-  artifactKey: Guid(228bdeddb6e0faf74b72422fbe6b184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_cornerLarge.png using Guid(228bdeddb6e0faf74b72422fbe6b184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'b60595f3cd157dfbdd1f94fa75acaec0') in 0.002702 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile.png
-  artifactKey: Guid(18b32fd597973159dbb950eecff6ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile.png using Guid(18b32fd597973159dbb950eecff6ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '084d581d6fff48afefe1de26549ac3ca') in 0.002789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/enemy_ufoRed.png
-  artifactKey: Guid(fbd83eb810846a36c9118a9401a1738f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/enemy_ufoRed.png using Guid(fbd83eb810846a36c9118a9401a1738f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e968c52b691c4995dbadece2c981d0aa') in 0.002786 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_detail_treeLarge.png
-  artifactKey: Guid(091bd13444db2cc7fafd7bd6f5972f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_detail_treeLarge.png using Guid(091bd13444db2cc7fafd7bd6f5972f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd26e5645c4a4e3e09f0761620e45b2f2') in 0.002935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/snow_tile_straightHillLarge.png
-  artifactKey: Guid(394d576472c64d24aa041ddca67b6b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/snow_tile_straightHillLarge.png using Guid(394d576472c64d24aa041ddca67b6b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '86163f633fa079543a7eb891d9db282a') in 0.003478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.849317 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_end.png
-  artifactKey: Guid(7db8e64855b6d993396578324e268bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_end.png using Guid(7db8e64855b6d993396578324e268bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '4095e80b6015e6a7d6eab74fc5f64b54') in 0.002999 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_riverCorner.png
-  artifactKey: Guid(6fd25a9fb93e113fa949b406e3de4447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_riverCorner.png using Guid(6fd25a9fb93e113fa949b406e3de4447) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c60f5f79471b00a3bc0b1f1120443c15') in 0.002852 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_riverTransition.png
-  artifactKey: Guid(3e7000adb200bde71b32b126a7dfb994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_riverTransition.png using Guid(3e7000adb200bde71b32b126a7dfb994) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '3fab73d76d9956a05fee342951480f8f') in 0.003339 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_spawnRound.png
-  artifactKey: Guid(ad10188dd31489918b7b83afe8c0d25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_spawnRound.png using Guid(ad10188dd31489918b7b83afe8c0d25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '622352dafb186b1b15581083e789ee0c') in 0.003538 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_straightHillLarge.png
-  artifactKey: Guid(8379b4ca82eeaec20a3670cc2ca1932a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_straightHillLarge.png using Guid(8379b4ca82eeaec20a3670cc2ca1932a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd78316b1bdf16be8f372c173c1bbfa1c') in 0.003690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.005672 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/tile_treeQuad.png
-  artifactKey: Guid(1253765c342e6c6ac8c29da32dbbd199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/tile_treeQuad.png using Guid(1253765c342e6c6ac8c29da32dbbd199) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'a45c2137e06591db131612579c34f686') in 0.003524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerRound_middleB.png
-  artifactKey: Guid(69ab786daa77f026f94d54eaa844e673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerRound_middleB.png using Guid(69ab786daa77f026f94d54eaa844e673) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '3af8d163682ce417857fcc66b46af087') in 0.002851 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerRound_topB.png
-  artifactKey: Guid(370016a1378ba2e6c81724fa1bba84d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerRound_topB.png using Guid(370016a1378ba2e6c81724fa1bba84d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e684a4ee7678f27d12095ca30c70dcd6') in 0.002860 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerSquare_bottomC.png
-  artifactKey: Guid(d96878f275d892d07b23c61676132b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerSquare_bottomC.png using Guid(d96878f275d892d07b23c61676132b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'a4f30e2672d96cb2aafe478e9e7e4618') in 0.002908 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerSquare_topA.png
-  artifactKey: Guid(36381b61a0b3b51d2b8e496376c89fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerSquare_topA.png using Guid(36381b61a0b3b51d2b8e496376c89fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '96ef765388d0d825bb1d0a6c708b8c1a') in 0.003117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerSquare_roofA.png
-  artifactKey: Guid(70902948a044f5fe3a0b787566641800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerSquare_roofA.png using Guid(70902948a044f5fe3a0b787566641800) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'af32cfa1665264da345a400f522ce75c') in 0.004142 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerSquare_sampleB.png
-  artifactKey: Guid(b580c7f232ebf977bb23a349bc74d7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerSquare_sampleB.png using Guid(b580c7f232ebf977bb23a349bc74d7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '06cb8c2e96bed6d7779c5e89f856d674') in 0.003716 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerRound_bottomC.png
-  artifactKey: Guid(705f2f65db577cbe290216344f4d918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerRound_bottomC.png using Guid(705f2f65db577cbe290216344f4d918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '9a0b04245ec9c3350c473e322e5a2336') in 0.003075 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerSquare_bottomA.png
-  artifactKey: Guid(5e907ad04b29fed77b677272145cf3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerSquare_bottomA.png using Guid(5e907ad04b29fed77b677272145cf3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'f619a210e44b3d8274d17ea6aa91ba89') in 0.004166 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/towerRound_sampleD.png
-  artifactKey: Guid(4f2148a9fee88bd58af7e4f0cb01a1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/towerRound_sampleD.png using Guid(4f2148a9fee88bd58af7e4f0cb01a1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleE.obj
+  artifactKey: Guid(272fd161969c78710b505ef8e6253605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleE.obj using Guid(272fd161969c78710b505ef8e6253605) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c5534ac54483a113fe2a5e1b5eb4704d') in 0.006222 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd4edad77a53214831cc02fe194c06aaf') in 0.016007 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001702 seconds.
-  path: Assets/kenney_tower-defense-kit/Side/weapon_catapult.png
-  artifactKey: Guid(729cb9546065c2e65b702773d8c48a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Side/weapon_catapult.png using Guid(729cb9546065c2e65b702773d8c48a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.016699 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_bottomB.obj
+  artifactKey: Guid(38fb40449aa0bad03a2d811d7e6a2ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_bottomB.obj using Guid(38fb40449aa0bad03a2d811d7e6a2ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd8eb0df654bc4760e9282c75747ab04b') in 0.003001 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2156eed51268847aac3efa3c190b7e60') in 0.019365 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
-  Time since last request: 3.689136 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/detail_crystal_W.png
-  artifactKey: Guid(1e47ac4b702c9d5dabd562d299ea1b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/detail_crystal_W.png using Guid(1e47ac4b702c9d5dabd562d299ea1b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000014 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_roofA.obj
+  artifactKey: Guid(76e9f625ee0ec807689c3607d2592b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_roofA.obj using Guid(76e9f625ee0ec807689c3607d2592b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2fa7e361c19a0d8ee56291abfb088cf5') in 0.004714 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '882fce251a1211667598bb0ee18d8218') in 0.021940 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/detail_dirt_E.png
-  artifactKey: Guid(2af3fb28fc323605cb920df60b6147e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/detail_dirt_E.png using Guid(2af3fb28fc323605cb920df60b6147e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.000017 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleE.obj
+  artifactKey: Guid(3d44f031488c30f92a2b52bceb909f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleE.obj using Guid(3d44f031488c30f92a2b52bceb909f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7681cf9cec08e291757990cd9d7594ee') in 0.003620 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '203e52348a0f3325db380abfce0da3d6') in 0.021217 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 12
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/detail_crystalLarge_N.png
-  artifactKey: Guid(90feaf62e025154e5bfbc2bb84c9fcec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/detail_crystalLarge_N.png using Guid(90feaf62e025154e5bfbc2bb84c9fcec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+  Time since last request: 0.336381 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_ballista.obj
+  artifactKey: Guid(35739b07d1aec3fe98a59379306c6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_ballista.obj using Guid(35739b07d1aec3fe98a59379306c6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7799a4ab054331ce924623680aeeabe4') in 0.003590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/detail_rocks_S.png
-  artifactKey: Guid(bfa151e319c357e8fb73a14433d23867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/detail_rocks_S.png using Guid(bfa151e319c357e8fb73a14433d23867) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'b973f7fe507e89001c85fbf302346184') in 0.003646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/detail_rocksLarge_S.png
-  artifactKey: Guid(67d98217936e282d6893beaf2227cb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/detail_rocksLarge_S.png using Guid(67d98217936e282d6893beaf2227cb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'fbefc5e0adcf793a66415eaf1e0727d3') in 0.003445 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000466 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/detail_treeLarge_E.png
-  artifactKey: Guid(a23315d831bade712b472b6d903dc978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/detail_treeLarge_E.png using Guid(a23315d831bade712b472b6d903dc978) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '44ff8654930f13abde41efca0c3b57fd') in 0.003420 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoGreen_E.png
-  artifactKey: Guid(4288c78440cb70ad5b03253fba8e62eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoGreen_E.png using Guid(4288c78440cb70ad5b03253fba8e62eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '165ca3e81219d1519b2c39731cd67e79') in 0.003331 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoGreenWeapon_S.png
-  artifactKey: Guid(0c37d04a2ff6182f5a877c46fd320801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoGreenWeapon_S.png using Guid(0c37d04a2ff6182f5a877c46fd320801) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '6256b628957f1526fb8d49e8a2d9e993') in 0.003433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoPurpleWeapon_N.png
-  artifactKey: Guid(37b70d7bd4fa9e4d18bc296e08cb6fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoPurpleWeapon_N.png using Guid(37b70d7bd4fa9e4d18bc296e08cb6fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'bcd548ce6c920eea6c591ff27ec125d3') in 0.003400 seconds
+ -> (artifact id: 'cbf038592cda0b50e2777d2156ab77b2') in 0.026017 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoRed_N.png
-  artifactKey: Guid(d977b86b8e30f199f8123097a1404de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoRed_N.png using Guid(d977b86b8e30f199f8123097a1404de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd7eb3eecc6b3f3a875e27776658f133a') in 0.003599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoYellowWeapon_W.png
-  artifactKey: Guid(d08224108aa592d3aac0ab2a66c4a91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoYellowWeapon_W.png using Guid(d08224108aa592d3aac0ab2a66c4a91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'db4a1060694318239143f7a35b442751') in 0.003570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/snow_detail_crystalLarge_E.png
-  artifactKey: Guid(e3111abf85fd68885bbae2d8545cede4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/snow_detail_crystalLarge_E.png using Guid(e3111abf85fd68885bbae2d8545cede4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '5249897d7404d8f08294caa9d2fae887') in 0.003497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoRed_W.png
-  artifactKey: Guid(96e689ae08e3aa72880a9e0dca4dbd8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoRed_W.png using Guid(96e689ae08e3aa72880a9e0dca4dbd8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2ac1ce2ae6d773ffaf2bd9bd023210d9') in 0.005291 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/kenney_tower-defense-kit/Isometric/enemy_ufoRed_S.png
-  artifactKey: Guid(2cbae03d802ff62b396b402dd9c8e6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kenney_tower-defense-kit/Isometric/enemy_ufoRed_S.png using Guid(2cbae03d802ff62b396b402dd9c8e6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'ffddd2b6c3d35a4c6f511fbbc86fc66f') in 0.005474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 16
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 125, details: Operation aborted.
 AssetImportWorker is now disconnected from the server
