@@ -55,7 +55,20 @@ public class IslandGenerator : MonoBehaviour
     bool IsValidBlock(Vector3 position)
     {
         // Verifica se o bloco está dentro dos limites do mar (opcional)
-        // Adicione verificações adicionais aqui se necessário
         return position.x >= 0 && position.x < 30 && position.z >= 0 && position.z < 30;
+    }
+
+    public Vector3 GetSpawnPosition()
+    {
+        // Retorna a posição do primeiro bloco gerado na ilha como ponto de spawn
+        if (generatedBlocks.Count > 0)
+        {
+            return generatedBlocks[0].position;
+        }
+        else
+        {
+            // Se não houver blocos, retorna a posição padrão
+            return new Vector3(15, islandHeight, 15);
+        }
     }
 }
