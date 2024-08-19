@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyBoatPrefab;
     public float spawnInterval = 5f;
     public float moveSpeed = 2f;
-    public float stopDistance = 1f;
+    public float stopDistance = 2.3f;
     public float breakTime = 5f;
     public float waterHeight = 0f; // Altura da água
 
