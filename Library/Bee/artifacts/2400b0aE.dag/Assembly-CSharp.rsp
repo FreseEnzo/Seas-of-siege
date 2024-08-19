@@ -355,9 +355,11 @@
 "Assets/Scripts/CannonPlacement.cs"
 "Assets/Scripts/CharacterMovement.cs"
 "Assets/Scripts/EnemyBoat.cs"
+"Assets/Scripts/EnemyHealth.cs"
 "Assets/Scripts/EnemySpawner.cs"
 "Assets/Scripts/IslandGenerator.cs"
 "Assets/Scripts/PlayerSpawner.cs"
+"Assets/Scripts/Turret.cs"
 "Assets/Scripts/WaterGenerator.cs"
 -langversion:9.0
 /deterministic
