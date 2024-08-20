@@ -62,6 +62,7 @@ public class CannonController : MonoBehaviour
         {
             // Calculate the direction from the cannon to the target
             Vector3 direction = (targetEnemy.position - cannonTransform.position).normalized;
+            direction.y = 0;
 
             // Calculate the target rotation based on the direction
             Quaternion targetRotation = Quaternion.LookRotation(direction);

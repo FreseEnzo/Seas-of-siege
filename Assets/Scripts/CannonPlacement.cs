@@ -5,7 +5,7 @@ public class CannonPlacement : MonoBehaviour
     public GameObject cannonPrefab;       // Prefab of the cannon to be placed
     public LayerMask islandLayer;         // Layer for detecting island blocks
     public LayerMask waterLayer;          // Layer for detecting water
-    public float placementOffsetY = 0.5f; // Height adjustment for correctly positioning the cannon on the block
+    public float placementOffsetY = 2f; // Height adjustment for correctly positioning the cannon on the block
     public float pushForce = 5f;          // Force applied when the cannon is pushed
 
     private GameObject currentCannon;     // Reference to the cannon being placed

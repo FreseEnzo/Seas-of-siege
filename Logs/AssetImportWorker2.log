@@ -1,0 +1,515 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.42f1 (2dcb6a0abc42) revision 3001194'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 6081 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/leoke/OneDrive/Documentos/GitHub/Seas-of-siege
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+63656
+Successfully changed project path to: C:/Users/leoke/OneDrive/Documentos/GitHub/Seas-of-siege
+C:/Users/leoke/OneDrive/Documentos/GitHub/Seas-of-siege
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19884]  Target information:
+
+Player connection [19884]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3140320839 [EditorId] 3140320839 [Version] 1048832 [Id] WindowsEditor(7,KODATE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19884]  * "[IP] 172.15.2.159 [Port] 0 [Flags] 2 [Guid] 3140320839 [EditorId] 3140320839 [Version] 1048832 [Id] WindowsEditor(7,KODATE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19884] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19884] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 81.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/leoke/OneDrive/Documentos/GitHub/Seas-of-siege/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon (TM) 625 (ID=0x6900)
+    Vendor:   ATI
+    VRAM:     2038 MB
+    Driver:   27.20.11030.11001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.060546 seconds.
+- Loaded All Assemblies, in  1.622 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.372 seconds
+Domain Reload Profiling: 2985ms
+	BeginReloadAssembly (543ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (207ms)
+	RebuildNativeTypeToScriptingClass (52ms)
+	initialDomainReloadingComplete (291ms)
+	LoadAllAssembliesAndSetupDomain (519ms)
+		LoadAssemblies (520ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (513ms)
+			TypeCache.Refresh (507ms)
+				TypeCache.ScanAssembly (464ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1373ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1209ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (83ms)
+			SetLoadedEditorAssemblies (120ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (815ms)
+			ProcessInitializeOnLoadMethodAttributes (182ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  5.043 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.446 seconds
+Domain Reload Profiling: 8547ms
+	BeginReloadAssembly (551ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (237ms)
+	RebuildNativeTypeToScriptingClass (49ms)
+	initialDomainReloadingComplete (265ms)
+	LoadAllAssembliesAndSetupDomain (3998ms)
+		LoadAssemblies (2811ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1453ms)
+			TypeCache.Refresh (1329ms)
+				TypeCache.ScanAssembly (802ms)
+			ScanForSourceGeneratedMonoScriptInfo (92ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (3448ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2962ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (224ms)
+			ProcessInitializeOnLoadAttributes (2609ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (42ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 1.98 seconds
+Refreshing native plugins compatible for Editor in 109.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (54.6 KB). Loaded Objects now: 3570.
+Memory consumption went from 194.0 MB to 193.9 MB.
+Total: 243.238500 ms (FindLiveObjects: 1.068800 ms CreateObjectMapping: 0.582700 ms MarkObjects: 20.612400 ms  DeleteObjects: 220.971000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68730.196681 seconds.
+  path: Assets/kenney_tower-defense-kit/Side/towerRound_bottomC.png
+  artifactKey: Guid(705f2f65db577cbe290216344f4d918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Side/towerRound_bottomC.png using Guid(705f2f65db577cbe290216344f4d918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f0a454e0f73c1987b9a2cca241bbeea0') in 1.112479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_crystals_W.png
+  artifactKey: Guid(5cfd06ad7e07f443d9f813b12a719003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_crystals_W.png using Guid(5cfd06ad7e07f443d9f813b12a719003) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7c85752d2df371eed1d99f5b8681cdec') in 0.389610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_crystals.obj
+  artifactKey: Guid(0fdf75ed6c025b2c1a83572d7a8aadae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_crystals.obj using Guid(0fdf75ed6c025b2c1a83572d7a8aadae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '41ae0696c25c1151d2ec6464d4b7d401') in 1.654371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 2.102565 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/DAE format/towerRound_middleA.dae
+  artifactKey: Guid(13b5307c03a4ac418b449fb0485274df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/DAE format/towerRound_middleA.dae using Guid(13b5307c03a4ac418b449fb0485274df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2d702f1f1231482eb04de40a39e370fa') in 0.190006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.025438 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_middleA_N.png
+  artifactKey: Guid(92e14ebffbdb1cf3e883c8d8c5349b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_middleA_N.png using Guid(92e14ebffbdb1cf3e883c8d8c5349b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e0172eaf418714a3305607fc148ac51a') in 0.056747 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.529394 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleB.obj
+  artifactKey: Guid(c7fb5acdff00721fbb0b0f7c351cddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleB.obj using Guid(c7fb5acdff00721fbb0b0f7c351cddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c4278d37ba0d0b253abe6731bc05f0e0') in 0.168086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.659635 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_middleB_N.png
+  artifactKey: Guid(dd9791daf462705c7ad2dc7fb0e6e78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_middleB_N.png using Guid(dd9791daf462705c7ad2dc7fb0e6e78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '397f90f506caaf4ff0ee68bb1c5071af') in 0.090964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.096575 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/DAE format/towerRound_middleC.dae
+  artifactKey: Guid(a49d0d24aabf1ffcdae51496ff162307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/DAE format/towerRound_middleC.dae using Guid(a49d0d24aabf1ffcdae51496ff162307) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2cf162959994e9be2caa5b799888addd') in 0.139024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_middleC_S.png
+  artifactKey: Guid(606f2eeff05042ed0b573c9069f88ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_middleC_S.png using Guid(606f2eeff05042ed0b573c9069f88ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '70b72616e5789e22e6d4a370f67ff192') in 0.060519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.116591 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_roofA.fbx
+  artifactKey: Guid(3d74e225b5c70c5efb33fab01b526bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_roofA.fbx using Guid(3d74e225b5c70c5efb33fab01b526bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9ab0130f7033c4bac805fa50e8a3a722') in 0.073187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 12.150130 seconds.
+  path: Assets/kenney_tower-defense-kit/Side/towerRound_roofA.png
+  artifactKey: Guid(73ad07c60a0fb8547a51732d4d2ea0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Side/towerRound_roofA.png using Guid(73ad07c60a0fb8547a51732d4d2ea0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1dd0ed0f0e6a97e155ac4459f8ed440e') in 0.105198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.217352 seconds.
+  path: Assets/kenney_tower-defense-kit/Side/towerRound_roofB.png
+  artifactKey: Guid(0ce21409892c55a889667a0ea94269dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Side/towerRound_roofB.png using Guid(0ce21409892c55a889667a0ea94269dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4bb14b4195c838eb166b2145b777fced') in 0.374699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.046702 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/DAE format/towerRound_roofC.dae
+  artifactKey: Guid(fc31b3a7fc46d24619a2f31e8a54c4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/DAE format/towerRound_roofC.dae using Guid(fc31b3a7fc46d24619a2f31e8a54c4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd0dc0ea6f328bf03150fa8ea1a8c5b5e') in 0.070541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.258018 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_roofC_N.png
+  artifactKey: Guid(19040b064fab1eae1bc3deeb7dd2840c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_roofC_N.png using Guid(19040b064fab1eae1bc3deeb7dd2840c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '875956d7bae587b40b899b7017e6c6ff') in 0.373996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.265886 seconds.
+  path: Assets/kenney_tower-defense-kit/Side/towerRound_sampleA.png
+  artifactKey: Guid(b4114524f6f9cf9dc942f58f46ef4a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Side/towerRound_sampleA.png using Guid(b4114524f6f9cf9dc942f58f46ef4a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fa6fca1c0d59e20fa6c8136ad7fe1331') in 0.067398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.200089 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleA_W.png
+  artifactKey: Guid(1899a0ec732537593a010dd65acbac28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleA_W.png using Guid(1899a0ec732537593a010dd65acbac28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1c89a5b485a121ba02a2bd91a6d4998b') in 0.061244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.466066 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_sampleB.fbx
+  artifactKey: Guid(ddabfa1126e9f5010b573985d706af54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_sampleB.fbx using Guid(ddabfa1126e9f5010b573985d706af54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c060929d7bc03ff083e8dbcecb859d30') in 0.226894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.426753 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleB_S.png
+  artifactKey: Guid(0dfd774087a5e5006bb448b231434547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleB_S.png using Guid(0dfd774087a5e5006bb448b231434547) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8b6e9e401b8e15cb1832e285e4dcfcf0') in 0.043257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.168528 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleB_W.png
+  artifactKey: Guid(61ce76ec832e81c36b1cec5303f9fe0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleB_W.png using Guid(61ce76ec832e81c36b1cec5303f9fe0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3c8379dcdc5f8598bb6536c12402926c') in 0.033612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.293596 seconds.
+  path: Assets/kenney_tower-defense-kit/Side/towerRound_sampleC.png
+  artifactKey: Guid(abf598f0f3c8a931eae25dbf732f5bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Side/towerRound_sampleC.png using Guid(abf598f0f3c8a931eae25dbf732f5bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c03094390d3140d409a1900a5f483d5') in 0.213159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.275236 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleC_E.png
+  artifactKey: Guid(768d9111e51fbeae48a5f69a64645e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleC_E.png using Guid(768d9111e51fbeae48a5f69a64645e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c0bfcd37ab15070dcda943f420b565d6') in 0.255416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.985290 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_sampleD.fbx
+  artifactKey: Guid(2fc0d93c99b18ad719c12ded04063a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_sampleD.fbx using Guid(2fc0d93c99b18ad719c12ded04063a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c6dc67d1c59667c01c556d301c103f2') in 0.136608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.231785 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleD_N.png
+  artifactKey: Guid(0dbafe7c8040d4c3fb5f91d1866aba17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleD_N.png using Guid(0dbafe7c8040d4c3fb5f91d1866aba17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd805b3c39daf27b7ae2d5055498051fe') in 0.105429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.138439 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleD_W.png
+  artifactKey: Guid(3a2e2bba9b8886cfdb8416c767a6ae37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleD_W.png using Guid(3a2e2bba9b8886cfdb8416c767a6ae37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5887dc52deddabc248bfbeacb1db68a0') in 0.069844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.137029 seconds.
+  path: Assets/kenney_tower-defense-kit/Side/towerRound_sampleE.png
+  artifactKey: Guid(91eb3b5c6bf95ec5dbc1e2024777e1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Side/towerRound_sampleE.png using Guid(91eb3b5c6bf95ec5dbc1e2024777e1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0be91ae27900aa5ce9c4fb79c6dd58cf') in 0.171687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.053063 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleE.obj
+  artifactKey: Guid(272fd161969c78710b505ef8e6253605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleE.obj using Guid(272fd161969c78710b505ef8e6253605) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c6f6ad8191b2b131b7fc54db1dc1e8c7') in 0.224720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.062911 seconds.
+  path: Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleE_S.png
+  artifactKey: Guid(c8f265b9f0fba075fb0096e7302837c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Isometric/towerRound_sampleE_S.png using Guid(c8f265b9f0fba075fb0096e7302837c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e1c7ba55f2e6cc232fc85c19e4474113') in 0.021778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.196537 seconds.
+  path: Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_sampleF.fbx
+  artifactKey: Guid(7a7d7986ff597d339a6a2f3db4af1eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kenney_tower-defense-kit/Models/FBX format/towerRound_sampleF.fbx using Guid(7a7d7986ff597d339a6a2f3db4af1eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fa0b067b4f2e905d8582ab4c72dff881') in 0.304629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
