@@ -65,6 +65,13 @@ public class EnemySpawner : MonoBehaviour
                 // Tag the spawned boat as "Enemy"
                 enemy.tag = "Enemy";
 
+                // Configurar o barco com o movimento e destino
+                EnemyBoat enemyBoat = enemy.GetComponent<EnemyBoat>();
+                if (enemyBoat != null)
+                {
+                    enemyBoat.moveSpeed = moveSpeed; // Ajuste a velocidade de movimento
+                }
+
                 StartCoroutine(MoveEnemyToTarget(enemy.transform, targetBlock));
             }
         }

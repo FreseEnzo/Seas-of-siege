@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyBoat : MonoBehaviour
 {
     public float moveSpeed = 2f;
+    public float health = 100f;  // Saúde do barco
     private Transform targetBlock;
 
     void Start()
@@ -18,6 +19,22 @@ public class EnemyBoat : MonoBehaviour
         {
             Debug.LogError("Nenhum bloco da ilha encontrado para o barco se mover em direção.");
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        Debug.LogError("Tomou dano.");
+        health -= amount;
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+        Debug.Log("Barco destruído!");
     }
 
     Transform FindClosestIslandBlock()
