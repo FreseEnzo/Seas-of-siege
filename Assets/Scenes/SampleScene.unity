@@ -151,7 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffba8b428bbd415babafec6bdfc0420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1131425927}
 --- !u!4 &5223845
 Transform:
   m_ObjectHideFlags: 0
@@ -231,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: swordPrefap
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72b8a493ac96b6bf2971dfd5b7cfd4ce, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -250,6 +253,10 @@ PrefabInstance:
     - target: {fileID: 100034, guid: d4e11b9e630d2ed41bef099db564e5b4, type: 3}
       propertyPath: m_Name
       value: boatPrefap
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: d4e11b9e630d2ed41bef099db564e5b4, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 400034, guid: d4e11b9e630d2ed41bef099db564e5b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -376,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0308dd274b749164291fd8c0911637f3, type: 3}
       propertyPath: m_Name
       value: cannonBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0308dd274b749164291fd8c0911637f3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0308dd274b749164291fd8c0911637f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -658,13 +669,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
       propertyPath: m_Name
       value: cannonMobilePrefap
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
       propertyPath: m_TagString
       value: Cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69caf8acb24748848a6b5964245e8a41, type: 3}
       propertyPath: m_LocalPosition.x
@@ -908,7 +943,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
@@ -989,9 +1024,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7134394785105016132, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6416400411484454144, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5151492872390713093, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3282224544444389344, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2853020237071049221, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -680007121006127350, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 759631688476599104, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4d7d9725f273238478224b54b463193b, type: 3}
       propertyPath: m_Name
       value: characterPrefap
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4d7d9725f273238478224b54b463193b, type: 3}
       propertyPath: m_IsActive
@@ -1000,6 +1067,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d7d9725f273238478224b54b463193b, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196833638761489284, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908311948669537042, guid: 4d7d9725f273238478224b54b463193b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1372,7 +1447,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1

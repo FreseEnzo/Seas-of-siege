@@ -18,7 +18,11 @@ public class Ball : MonoBehaviour
                 enemyBoat.TakeDamage(damageAmount);
                 // Opcionalmente, destrua a bola após o impacto
                 Destroy(gameObject);
-            }
+            } 
         }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
+        {
+			Destroy(gameObject);
+			}
     }
 }
