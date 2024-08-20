@@ -60,7 +60,7 @@ public class EnemySpawner : MonoBehaviour
                 Rigidbody rb = enemy.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
-                    rb.useGravity = false;
+                    rb.useGravity = true;
                 }
 
                 enemy.tag = "Enemy";

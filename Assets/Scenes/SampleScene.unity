@@ -1471,9 +1471,9 @@ MonoBehaviour:
   cannonTransform: {fileID: 1551174139}
   cannonballExitPoint: {fileID: 2072554444}
   cannonballPrefab: {fileID: 987176213}
-  firingForce: 12
+  firingForce: 25
   range: 20
-  fireRate: 1
+  fireRate: 5
 --- !u!1 &1565874178
 GameObject:
   m_ObjectHideFlags: 0
