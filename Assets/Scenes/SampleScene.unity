@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffba8b428bbd415babafec6bdfc0420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 0}
 --- !u!4 &5223845
 Transform:
   m_ObjectHideFlags: 0
@@ -1693,12 +1694,13 @@ MonoBehaviour:
   enemyBoatPrefab: {fileID: 1587746538}
   spawnInterval: 5
   moveSpeed: 2
-  stopDistance: 2.3
+  stopDistance: 2
   breakTime: 5
   waterHeight: 0
   seaWidth: 30
   seaLength: 30
   seaHeight: 0
+  recoverySpeed: 0.5
 --- !u!4 &1717948882
 Transform:
   m_ObjectHideFlags: 0
