@@ -61,6 +61,10 @@ public class EnemySpawner : MonoBehaviour
                 {
                     rb.useGravity = false; // Desativa a gravidade
                 }
+                
+                // Tag the spawned boat as "Enemy"
+                enemy.tag = "Enemy";
+
                 StartCoroutine(MoveEnemyToTarget(enemy.transform, targetBlock));
             }
         }

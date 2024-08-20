@@ -2,13 +2,14 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraFollow
+    - CannonController
+    - CannonPlacement
     - EnemyBoat
     - EnemySpawner
     - IslandGenerator
     - PlayerController
+    - PlayerSpawner
     - WaterGenerator
-    Unity.AI.Navigation.Editor.dll:
-    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -69,22 +70,30 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2588}
     - Class: 114
-      Script: {instanceID: 3664}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 3666}
     - Class: 114
-      Script: {instanceID: 6062}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 6906}
+      Script: {instanceID: 5908}
     - Class: 114
-      Script: {instanceID: 7770}
+      Script: {instanceID: 6066}
     - Class: 114
-      Script: {instanceID: 23156}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 28710}
+      Script: {instanceID: 6910}
     - Class: 114
-      Script: {instanceID: 28722}
+      Script: {instanceID: 7720}
+    - Class: 114
+      Script: {instanceID: 7776}
+    - Class: 114
+      Script: {instanceID: 23182}
+    - Class: 114
+      Script: {instanceID: 80900}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -359,6 +368,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSelectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 1db2d14bb2ef4c552995cc208729b04a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraFollow
   - hash:
       serializedVersion: 2
       Hash: 5b8b7230ad968399f6726aa1269dcdcb
@@ -697,6 +712,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 9e85c899e6eb61f88122be05d8df97e8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerSpawner
+  - hash:
+      serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -805,7 +826,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 03fe7eae38dbbc3dea376522620f158d
+      Hash: ca82b46cb508657a84be2716aae11c81
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CannonPlacement
@@ -937,6 +958,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 7fcd617a0a4a9d00fb57826f39c5959c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: 02a47340661d2ea7c6d30e292cfef403
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -973,16 +1000,22 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 7fcd617a0a4a9d00fb57826f39c5959c
+      Hash: 4276d0d30121e48417e617c7e97ad402
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PlayerController
+    className: EnemyHealth
   - hash:
       serializedVersion: 2
-      Hash: 1db2d14bb2ef4c552995cc208729b04a
+      Hash: b510c4055b40e0d054e3ecb1e7899d4a
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: CameraFollow
+    className: Turret
+  - hash:
+      serializedVersion: 2
+      Hash: 0fdf4649ef2f5623dfaf5a00dd040f67
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CannonController
   platform: 24
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -352,6 +352,7 @@
 -analyzer:"/home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/frese/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/CannonController.cs"
 "Assets/Scripts/CannonPlacement.cs"
 "Assets/Scripts/CharacterMovement.cs"
 "Assets/Scripts/EnemyBoat.cs"

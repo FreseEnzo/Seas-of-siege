@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class CannonPlacement : MonoBehaviour
 {
-    public GameObject cannonPrefab;       // Prefab do canhão a ser posicionado
-    public LayerMask islandLayer;         // Layer para detectar os blocos da ilha
-    public LayerMask waterLayer;          // Layer para detectar a água (mar)
-    public float placementOffsetY = 0.5f; // Ajuste de altura para posicionar o canhão corretamente no bloco
-    public float pushForce = 5f;          // Força aplicada ao empurrar o canhão
+    public GameObject cannonPrefab;       // Prefab of the cannon to be placed
+    public LayerMask islandLayer;         // Layer for detecting island blocks
+    public LayerMask waterLayer;          // Layer for detecting water
+    public float placementOffsetY = 0.5f; // Height adjustment for correctly positioning the cannon on the block
+    public float pushForce = 5f;          // Force applied when the cannon is pushed
 
-    private GameObject currentCannon;     // Referência ao canhão que será posicionado
-    private bool isPlacingCannon = false; // Flag para determinar se estamos no modo de colocação
+    private GameObject currentCannon;     // Reference to the cannon being placed
+    private bool isPlacingCannon = false; // Flag to determine if we are in placement mode
 
     void Update()
     {
@@ -22,13 +22,13 @@ public class CannonPlacement : MonoBehaviour
         {
             MoveCannonWithMouse();
 
-            if (Input.GetMouseButtonDown(0)) // 0 é o botão esquerdo do mouse
+            if (Input.GetMouseButtonDown(0)) // 0 is the left mouse button
             {
                 PlaceCannon();
             }
         }
 
-        // Verifica se o canhão está na água e aplica a física se necessário
+        // Check if the cannon is in water and apply physics if necessary
         if (currentCannon != null && IsCannonInWater(currentCannon.transform.position))
         {
             HandleCannonInWater();
@@ -42,6 +42,25 @@ public class CannonPlacement : MonoBehaviour
         {
             currentCannon = Instantiate(cannonPrefab, spawnPosition, Quaternion.identity);
             isPlacingCannon = true;
+            Debug.Log("Cannon placed at: " + spawnPosition);
+
+            // Verify cannonball prefab assignment
+            CannonController cannonController = currentCannon.GetComponent<CannonController>();
+            if (cannonController != null)
+            {
+                if (cannonController.cannonballPrefab != null)
+                {
+                    Debug.Log("Cannonball prefab is assigned.");
+                }
+                else
+                {
+                    Debug.LogError("Cannonball prefab is not assigned in the CannonController.");
+                }
+            }
+            else
+            {
+                Debug.LogError("CannonController script is missing from the cannon prefab.");
+            }
         }
     }
 
@@ -56,16 +75,16 @@ public class CannonPlacement : MonoBehaviour
 
     void PlaceCannon()
     {
-        // Verifica se o canhão está na água e aplica a física se necessário
+        // Check if the cannon is in water and apply physics if necessary
         if (IsCannonInWater(currentCannon.transform.position))
         {
             HandleCannonInWater();
         }
         else
         {
-            // Coloca o canhão em sua posição final
+            // Finalize cannon placement
             isPlacingCannon = false;
-            currentCannon = null; // Reseta a referência para permitir novas colocações
+            currentCannon = null; // Reset reference to allow new placements
         }
     }
 
@@ -76,7 +95,7 @@ public class CannonPlacement : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, islandLayer | waterLayer))
         {
-            // Ajusta a posição para o centro do bloco, considerando o offset
+            // Adjust position to the center of the block, considering the offset
             Vector3 blockCenter = hit.collider.bounds.center;
             blockCenter.y = hit.point.y + placementOffsetY;
             return blockCenter;
@@ -98,14 +117,14 @@ public class CannonPlacement : MonoBehaviour
             Rigidbody rb = currentCannon.GetComponent<Rigidbody>();
             if (rb == null)
             {
-                rb = currentCannon.AddComponent<Rigidbody>(); // Adiciona um Rigidbody se não houver um
+                rb = currentCannon.AddComponent<Rigidbody>(); // Add a Rigidbody if not present
             }
 
-            // Adiciona uma força para simular o afundamento ou movimento na água
+            // Apply force to simulate sinking or movement in water
             rb.AddForce(Vector3.down * pushForce, ForceMode.Impulse);
 
-            // Opcionalmente, destrua o canhão se ele ficar na água por um tempo
-            Destroy(currentCannon, 5f); // Destroi o canhão após 5 segundos na água
+            // Optionally destroy the cannon after a while in the water
+            Destroy(currentCannon, 5f); // Destroy the cannon after 5 seconds in the water
         }
     }
 }
