@@ -2,27 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public abstract class Projectile : MonoBehaviour
 {
     public float damageAmount = 10f;
 
-    private void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
+        // Handle collision with enemies
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Encontre o componente EnemyBoat no barco
+            // Find the EnemyBoat component on the enemy
             EnemyBoat enemyBoat = collision.gameObject.GetComponent<EnemyBoat>();
             if (enemyBoat != null)
             {
-                // Aplique dano ao barco
+                // Apply damage to the enemy
                 enemyBoat.TakeDamage(damageAmount);
-                // Opcionalmente, destrua a bola após o impacto
+                // Optionally, destroy the projectile after impact
                 Destroy(gameObject);
-            } 
+            }
         }
+        // Handle collision with water or other specific layers
         if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
-			Destroy(gameObject);
-			}
+            Destroy(gameObject);
+        }
     }
 }

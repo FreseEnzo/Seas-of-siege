@@ -5,7 +5,7 @@ public class WeaponPlacement : MonoBehaviour
     public LayerMask islandLayer;         // Layer for detecting island blocks
     public LayerMask waterLayer;          // Layer for detecting water
     public LayerMask weaponLayer;         // Layer for detecting existing weapons
-    public float placementOffsetY = 2f;   // Height adjustment for correctly positioning the weapon on the block
+    public float placementOffsetY = 0.5f;   // Height adjustment for correctly positioning the weapon on the block
     public float placementRadius = 0.5f;  // Radius for checking overlapping objects
     public float pushForce = 5f;          // Force applied when the weapon is pushed
 
