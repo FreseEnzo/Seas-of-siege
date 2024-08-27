@@ -20,6 +20,14 @@ public class EnemyBoat : MonoBehaviour
             Debug.LogError("Nenhum bloco da ilha encontrado para o barco se mover em direção.");
         }
     }
+    void Update()
+    {
+		if (targetBlock = null)
+        {
+            targetBlock = FindClosestIslandBlock();
+            StartCoroutine(MoveToTarget());
+        }
+	}
 
     public void TakeDamage(float amount)
     {
@@ -48,7 +56,7 @@ public class EnemyBoat : MonoBehaviour
 
         foreach (Transform block in islandBlocks)
         {
-            if (block.CompareTag("IslandBlock")) // Certifique-se de que o bloco da ilha tem a tag "IslandBlock"
+            if (block.CompareTag("Island")) // Certifique-se de que o bloco da ilha tem a tag "IslandBlock"
             {
                 float distance = Vector3.Distance(currentPosition, block.position);
                 if (distance < closestDistance)
