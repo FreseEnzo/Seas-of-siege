@@ -8,6 +8,7 @@ public class CannonController : MonoBehaviour
     public float firingForce = 10f;           // Force applied to the cannonball
     public float range = 50f;                 // Range within which to target enemies
     public float fireRate = 1f;               // Rate of fire in seconds
+    public Animator animator;
 
     private Transform targetEnemy;
     private float fireCooldown;
@@ -15,6 +16,11 @@ public class CannonController : MonoBehaviour
     void Start()
     {
         fireCooldown = 0f; // Initialize cooldown
+        // Ensure the animator is linked
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     void Update()
@@ -84,6 +90,7 @@ public class CannonController : MonoBehaviour
             // Instantiate cannonball at the specified exit point
             GameObject cannonball = Instantiate(cannonballPrefab, cannonballExitPoint.position, cannonballExitPoint.rotation);
             Rigidbody rb = cannonball.GetComponent<Rigidbody>();
+            animator.SetTrigger("Fire");
 
             if (rb != null)
             {

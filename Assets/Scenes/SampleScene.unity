@@ -259,6 +259,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a02dcf8d3c5713847ba1662a933ef3a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2035710959}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a02dcf8d3c5713847ba1662a933ef3a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2035710964}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a02dcf8d3c5713847ba1662a933ef3a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2035710963}
   m_SourcePrefab: {fileID: 100100000, guid: a02dcf8d3c5713847ba1662a933ef3a0, type: 3}
 --- !u!4 &6505917 stripped
 Transform:
@@ -2489,6 +2495,7 @@ MonoBehaviour:
   firingForce: 35
   range: 20
   fireRate: 1
+  animator: {fileID: 0}
 --- !u!1001 &861669588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2631,6 +2638,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1347356589}
   m_SourcePrefab: {fileID: 100100000, guid: 82da39bd1b81e436bae2140baaf102f9, type: 3}
+--- !u!4 &949553126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5033198208762345741, guid: cb01567a699112347aa7c3f397c51d14, type: 3}
+  m_PrefabInstance: {fileID: 1475143322}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &961039551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3498,6 +3510,7 @@ MonoBehaviour:
   firingForce: 10
   range: 50
   fireRate: 1
+  animator: {fileID: 0}
 --- !u!1001 &1179430141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4170,6 +4183,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42a70d11596c7f143b19cf1dd8046ddb, type: 3}
       propertyPath: m_Name
       value: tree_palmBend
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a70d11596c7f143b19cf1dd8046ddb, type: 3}
+      propertyPath: m_TagString
+      value: Island
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5663,6 +5680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MountainPrefrap
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8816c709c9e4b024ca50b1b8a5a6f075, type: 3}
+      propertyPath: m_TagString
+      value: Island
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5951,6 +5972,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8999999, y: 1.31, z: 0.7794228}
   m_Center: {x: 0, y: 0.655, z: 0}
+--- !u!114 &2035710963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035710956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2f7e1d7168cc079af05f9478114265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannonTransform: {fileID: 1475143323}
+  cannonballExitPoint: {fileID: 949553126}
+  cannonballPrefab: {fileID: 987176213}
+  firingForce: 10
+  range: 50
+  fireRate: 1
+  animator: {fileID: 0}
+--- !u!95 &2035710964
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035710956}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2a0414fff5e93a4db413774addf8f0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2049065996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 72b8a493ac96b6bf2971dfd5b7cfd4ce, type: 3}
