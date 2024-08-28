@@ -19,8 +19,7 @@ Sieges of Sieg is a continuous tower defense game developed with Unity and C#. D
    - [Tower Types](#tower-types)
    - [Game Over Conditions](#game-over-conditions)
 5. [Development](#development)
-6. [Contributing](#contributing)
-7. [License](#license)
+6. [License](#license)
 
 ## Game Overview
 
