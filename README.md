@@ -139,4 +139,4 @@ This project is developed using Unity and C# with an object-oriented approach. T
 
 ## License
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+This project is licensed under the [MIT License](https://github.com/FreseEnzo/Seas-of-siege/blob/main/LICENSE).
