@@ -1,15 +1,15 @@
-# Sieges of Sieg
+# Seas of Sieg
 
 Sieges of Sieg is a continuous tower defense game developed with Unity and C#. Defend your island against waves of enemies, expand your territory, and strategically place towers to survive as long as possible!
 
 ## Table of Contents
-
-1. [Game Overview](#game-overview)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
+1. [Motivation](#motivation)
+2. [Game Overview](#game-overview)
+3. [Features](#features)
+4. [Getting Started](#getting-started)
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
-4. [Gameplay](#gameplay)
+5. [Gameplay](#gameplay)
    - [Grid Generation](#grid-generation)
    - [Terrain Generation](#terrain-generation)
    - [Wave System](#wave-system)
@@ -18,9 +18,19 @@ Sieges of Sieg is a continuous tower defense game developed with Unity and C#. D
    - [Construction Phase](#construction-phase)
    - [Tower Types](#tower-types)
    - [Game Over Conditions](#game-over-conditions)
-5. [Development](#development)
-6. [License](#license)
+6. [Development](#development)
+7. [License](#license)
+ 
+# Motivation
 
+1. **Strategic Depth**: The island setting provides a natural, contained environment for players to exercise strategic thinking. The limited space forces players to make meaningful choices about placement and resource allocation.
+
+2. **Narrative Potential**: The setting allows for compelling storytelling, with the possibility of introducing colorful characters from both the colonial and pirate sides, adding depth to the gameplay experience.
+
+3. **Replayability**: The combination of random events, varied pirate attacks, and multiple strategies for island development ensures high replayability, keeping players engaged over time.
+
+4. **Market Opportunity**: While tower defense games are popular, the unique setting and naval warfare elements help differentiate this game in a crowded market.
+   
 ## Game Overview
 
 Sieges of Sieg is an exciting tower defense game where players must protect their island from relentless waves of enemies. Expand your territory, build powerful towers, and use strategy to survive as long as possible in this continuous challenge.
