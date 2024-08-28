@@ -33,7 +33,7 @@ Seas of Sieg is a continuous tower defense game developed with Unity and C#. Def
    
 ## Game Overview
 
-Sieges of Sieg is an exciting tower defense game where players must protect their island from relentless waves of enemies. Expand your territory, build powerful towers, and use strategy to survive as long as possible in this continuous challenge.
+Seas of Sieg is an exciting tower defense game where players must protect their island from relentless waves of enemies. Expand your territory, build powerful towers, and use strategy to survive as long as possible in this continuous challenge.
 ![Screenshot from 2024-08-27 21-54-09](https://github.com/user-attachments/assets/2d6508d1-84cc-4678-abf3-aad1c05bb97b)
 ![Screenshot from 2024-08-27 21-54-33](https://github.com/user-attachments/assets/b58d1303-b4fb-42f7-810a-e52c2eea36cc)
 ![Screenshot from 2024-08-27 21-54-42](https://github.com/user-attachments/assets/bcac092d-e523-478c-ba09-7482e8246355)
