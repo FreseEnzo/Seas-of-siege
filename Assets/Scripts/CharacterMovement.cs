@@ -12,18 +12,17 @@ public class PlayerController : MonoBehaviour
     public Transform feetTransform; // Assign this to the transform representing the player's feet
     public float feetRadius = 0.5f; // Radius for the CheckSphere method
     public float borderBuffer = 0.1f; // Buffer to detect if near the edge of an Island block
-    public float jumpForce = 7f; // Jump force
-    
+    public float jumpForce = 4f; // Jump force
+
 
     private bool isAttacking = false;
     private bool isOnIsland = false; // Track if player is on an island block
-    private bool isGrounded = true; // Track if the player is grounded
     private Rigidbody rb;
 
     void Start()
     {
+		rb = GetComponent<Rigidbody>();
         // Parent the sword to the swordHand and adjust position and rotation
-        rb = GetComponent<Rigidbody>();
         if (sword != null && swordHand != null)
         {
             sword.transform.SetParent(swordHand);
@@ -42,8 +41,12 @@ public class PlayerController : MonoBehaviour
         // Check if the player is on a valid block
         CheckIfOnIsland();
         MaintainUprightPosition();
+        if (Input.GetButtonDown("Jump") && isOnIsland)
+        {
+            Jump();
+        }
 
-        if (1==1)
+        if (isOnIsland)
         {
             // Movement handling
             float move = Input.GetAxis("Vertical");
@@ -79,15 +82,38 @@ public class PlayerController : MonoBehaviour
             {
                 StartCoroutine(Attack());
             }
-            if (Input.GetButtonDown("Jump") && isGrounded)
-			{
-				Jump();
-			}
         }
         else
         {
+			float move = Input.GetAxis("Vertical");
+            float strafe = Input.GetAxis("Horizontal");
+
+            Vector3 direction = new Vector3(strafe, 0, move).normalized;
+
+            if (direction.magnitude >= 0.1f)
+            {
+                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref rotationSpeed, 0.1f);
+
+                transform.rotation = Quaternion.Euler(0, angle, 0);
+
+                Vector3 moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+                if (1 == 1)
+                {
+                    transform.Translate(moveDir.normalized * moveSpeed * Time.deltaTime, Space.World);
+                    animator.SetBool("isRunning", true);
+                }
+                else
+                {
+                    animator.SetBool("isRunning", false);
+                }
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
             // Block movement if not on an Island block
-            animator.SetBool("isRunning", false);
+            //animator.SetBool("isRunning", false);
         }
     }
 
@@ -117,21 +143,13 @@ public class PlayerController : MonoBehaviour
 
         isAttacking = false;
     }
+	void MaintainUprightPosition()
+    {
+        Vector3 currentRotation = transform.eulerAngles;
+        transform.rotation = Quaternion.Euler(0, currentRotation.y, 0);
+    }
     void Jump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        isGrounded = false; // Character is airborne
-    }
-    void MaintainUprightPosition()
-    {
-        Vector3 currentRotation = transform.eulerAngles;
-        transform.rotation = Quaternion.Euler(0, 0, 0);
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Island"))
-        {
-            isGrounded = true; // Character has landed
-        }
     }
 }
