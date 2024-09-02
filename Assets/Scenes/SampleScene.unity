@@ -3030,6 +3030,7 @@ MonoBehaviour:
   feetTransform: {fileID: 1131425930}
   feetRadius: 0.005
   borderBuffer: 0.1
+  jumpForce: 4
 --- !u!4 &1131425930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d7d9725f273238478224b54b463193b, type: 3}

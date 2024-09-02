@@ -12,6 +12,7 @@ public class PlayerSpawner : MonoBehaviour
         {
             // Obtém a posição de spawn da ilha
             Vector3 spawnPosition = islandGenerator.GetSpawnPosition();
+            spawnPosition.y += 2;
 
             // Encontra o jogador na cena
             GameObject existingPlayer = GameObject.FindWithTag("Player");
