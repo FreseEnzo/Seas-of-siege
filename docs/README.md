@@ -1,6 +1,6 @@
-# Mares de Cerco
+# Seas of siege
 
-Mares de Cerco é um jogo de torre de defesa contínuo desenvolvido com Unity e C#. Defenda sua ilha contra ondas de inimigos, expanda seu território e coloque estrategicamente torres para sobreviver o máximo possível!
+Seas of siege é um jogo de torre de defesa contínuo desenvolvido com Unity e C#. Defenda sua ilha contra ondas de inimigos, expanda seu território e coloque estrategicamente torres para sobreviver o máximo possível!
 
 ## Sumário
 1. [Motivação](#motivação)
@@ -33,7 +33,7 @@ Mares de Cerco é um jogo de torre de defesa contínuo desenvolvido com Unity e 
 
 ## Visão Geral do Jogo
 
-Mares de Cerco é um emocionante jogo de torre de defesa onde os jogadores devem proteger sua ilha de ondas implacáveis de inimigos. Expanda seu território, construa torres poderosas e use estratégia para sobreviver o máximo possível neste desafio contínuo.
+Seas of siege é um emocionante jogo de torre de defesa onde os jogadores devem proteger sua ilha de ondas implacáveis de inimigos. Expanda seu território, construa torres poderosas e use estratégia para sobreviver o máximo possível neste desafio contínuo.
 
 ![Screenshot from 2024-08-27 21-54-09](https://github.com/user-attachments/assets/2d6508d1-84cc-4678-abf3-aad1c05bb97b)
 ![Screenshot from 2024-08-27 21-54-33](https://github.com/user-attachments/assets/b58d1303-b4fb-42f7-810a-e52c2eea36cc)
