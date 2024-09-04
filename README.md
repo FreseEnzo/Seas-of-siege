@@ -37,6 +37,7 @@ Seas of Siege is an exciting tower defense game where players must protect their
 ![Screenshot from 2024-08-27 21-54-09](https://github.com/user-attachments/assets/2d6508d1-84cc-4678-abf3-aad1c05bb97b)
 ![Screenshot from 2024-08-27 21-54-33](https://github.com/user-attachments/assets/b58d1303-b4fb-42f7-810a-e52c2eea36cc)
 ![Screenshot from 2024-08-27 21-54-42](https://github.com/user-attachments/assets/bcac092d-e523-478c-ba09-7482e8246355)
+![Screenshot from 2024-09-03 21-50-46](https://github.com/user-attachments/assets/9d072acd-4854-47cd-9174-d92309606895)
 
 ## Features
 
