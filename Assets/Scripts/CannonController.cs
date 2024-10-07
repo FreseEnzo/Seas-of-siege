@@ -90,7 +90,7 @@ public class CannonController : MonoBehaviour
             // Instantiate cannonball at the specified exit point
             GameObject cannonball = Instantiate(cannonballPrefab, cannonballExitPoint.position, cannonballExitPoint.rotation);
             Rigidbody rb = cannonball.GetComponent<Rigidbody>();
-            animator.SetTrigger("Fire");
+            //animator.SetTrigger("Fire");
 
             if (rb != null)
             {
