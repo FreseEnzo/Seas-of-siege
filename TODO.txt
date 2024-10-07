@@ -1,0 +1,20 @@
+- Arrumar a movimentação do jogador
+- Arrumar o barco desaparecer
+- Arrumar as torres atirando
+	- Motivo sendo o prefab do cannonball esta morrendo e assim os prefaps tao perdendo o objeto
+	- De alguma forma não deixar o cannonball original morrer para parar de explodir as torres
+	- Ainda assim alguma coisa ta matando o script de mira, a solução simples é matar a animação das torres e tentar fazer algo um pouco mais rústico
+- Executar a solução simples de cima (Matar todas as animações e tentar algo mais rústico)
+- Criar animações de torres que não destruam o script
+- Talvez arrumar o bug da ilha unitaria
+- Criar novos prefaps de inimigos
+- Talvez melhorar os prefaps das torres?
+	- Provavelmente colocar materiais diferentes em cada torre, variações de madeira. (Oak, Spruce, Birch)
+- Jogador morrer na água
+
+
+// Gameplay //
+- Evolução das torres
+- Mudança de aparencia das torres
+- Inimigos mais fortes por onda
+- Jogador atacar
