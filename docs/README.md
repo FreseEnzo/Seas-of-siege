@@ -2,6 +2,8 @@
 
 Seas of siege é um jogo de torre de defesa contínuo desenvolvido com Unity e C#. Defenda sua ilha contra ondas de inimigos, expanda seu território e coloque estrategicamente torres para sobreviver o máximo possível!
 
+[Bibliteca gráfica (Unity 3D)](unity_tutorial.md).
+
 ## Sumário
 1. [Motivação](#motivação)
 2. [Visão Geral do Jogo](#visão-geral-do-jogo)
