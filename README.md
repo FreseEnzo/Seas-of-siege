@@ -1,5 +1,10 @@
 # Seas of Siege
 
+## Collaborators
+
+- [@FreseEnzo](https://github.com/LeoKeiji) - Frese
+- [@LeoKeiji](https://github.com/FreseEnzo) - Keiji
+
 [Portuguese PT-BR README](docs/README.md).
 
 Seas of Siege is a continuous tower defense game developed with Unity and C#. Defend your island against waves of enemies, expand your territory, and strategically place towers to survive as long as possible!
