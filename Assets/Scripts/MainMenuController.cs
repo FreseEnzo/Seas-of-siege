@@ -6,14 +6,14 @@ public class MainMenuController : MonoBehaviour
     // Function to start the game
     public void StartGame()
     {
-        // Replace "GameScene" with the name of your game scene
+        // Replace "GameScene" with the exact name of your game scene
         SceneManager.LoadScene("SampleScene");
     }
 
-    // Function to quit the game
+    // Optional: Function to quit the game
     public void QuitGame()
     {
-        // If running in the editor
+        // If running in the Unity Editor
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
         #else
