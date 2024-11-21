@@ -3,22 +3,33 @@ using System.Collections;
 
 public class EnemyBoat : MonoBehaviour
 {
+    [Header("Movement Settings")]
     public float moveSpeed = 2f;
-    public float health = 100f;  // Boat's health
-    private Transform targetBlock;
-    private Coroutine moveCoroutine;
+    public float stopDistance = 3f;
+    public float breakTime = 5f;
+    public float recoverySpeed = 0.5f;
 
-    void Start()
+    [Header("Health Settings")]
+    public float health = 100f;
+
+    private Transform[] islandBlocks;
+    private Transform targetBlock;
+    private float timeAtTarget = 0f;
+    private Renderer targetBlockRenderer;
+    private Color initialColor;
+    private Color damageColor = Color.red;
+
+    // Rotation speed multiplier
+    public float rotationSpeed = 5f;
+
+    public void SetIslandBlocks(Transform[] blocks)
     {
-        FindAndMoveToTargetBlock();
+        islandBlocks = blocks;
     }
 
-    void Update()
+    public void Initialize()
     {
-        if (targetBlock == null)
-        {
-            FindAndMoveToTargetBlock();
-        }
+        FindAndMoveToTargetBlock();
     }
 
     void FindAndMoveToTargetBlock()
@@ -26,15 +37,121 @@ public class EnemyBoat : MonoBehaviour
         targetBlock = FindClosestIslandBlock();
         if (targetBlock != null)
         {
-            if (moveCoroutine != null)
-            {
-                StopCoroutine(moveCoroutine);
-            }
-            moveCoroutine = StartCoroutine(MoveToTarget());
+            StartCoroutine(MoveToTarget());
         }
         else
         {
-            Debug.LogError("No island block found for the boat to move towards.");
+            Debug.LogWarning("No island block found for the boat to move towards.");
+            Destroy(gameObject); // Optionally destroy the boat if no targets are available
+        }
+    }
+
+    Transform FindClosestIslandBlock()
+    {
+        if (islandBlocks == null || islandBlocks.Length == 0)
+            return null;
+
+        Transform closest = null;
+        float closestDistance = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
+
+        foreach (Transform block in islandBlocks)
+        {
+            if (block == null)
+                continue;
+
+            float distance = Vector3.Distance(currentPosition, block.position);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closest = block;
+            }
+        }
+
+        return closest;
+    }
+
+    IEnumerator MoveToTarget()
+    {
+        while (targetBlock != null)
+        {
+            // Calculate horizontal distance (ignore y)
+            Vector2 enemyPos2D = new Vector2(transform.position.x, transform.position.z);
+            Vector2 targetPos2D = new Vector2(targetBlock.position.x, targetBlock.position.z);
+            float currentDistance = Vector2.Distance(enemyPos2D, targetPos2D);
+
+            if (currentDistance > stopDistance)
+            {
+                // Move towards the target island block
+                Vector3 direction = (targetBlock.position - transform.position);
+                direction.y = 0f; // Ignore vertical difference
+                direction.Normalize();
+                transform.position += direction * moveSpeed * Time.deltaTime;
+
+                // Rotate enemy to face the movement direction
+                if (direction != Vector3.zero)
+                {
+                    Quaternion targetRotation = Quaternion.LookRotation(direction);
+                    // Rotate the boat by 180 degrees if necessary
+                    targetRotation *= Quaternion.Euler(0, -180f, 0);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+                }
+            }
+            else
+            {
+                // Enemy has reached the stop distance and starts attacking
+                if (targetBlockRenderer == null)
+                {
+                    targetBlockRenderer = targetBlock.GetComponent<Renderer>();
+                    if (targetBlockRenderer == null)
+                    {
+                        Debug.LogError("Island block does not have a Renderer.");
+                        yield break;
+                    }
+                    initialColor = targetBlockRenderer.material.color;
+                }
+
+                timeAtTarget += Time.deltaTime;
+                targetBlockRenderer.material.color = Color.Lerp(initialColor, damageColor, timeAtTarget / breakTime);
+
+                if (timeAtTarget >= breakTime)
+                {
+                    // Destroy the island block after breakTime
+                    BreakIsland(targetBlock);
+                    timeAtTarget = 0f;
+                    targetBlockRenderer = null;
+
+                    // Find a new target block
+                    targetBlock = FindClosestIslandBlock();
+                    if (targetBlock != null)
+                    {
+                        StartCoroutine(MoveToTarget());
+                    }
+                    else
+                    {
+                        // No more island blocks, destroy the enemy
+                        Destroy(gameObject);
+                    }
+                    yield break;
+                }
+            }
+
+            yield return null;
+        }
+
+        // If targetBlock is null, attempt to find a new target
+        if (targetBlock == null)
+        {
+            FindAndMoveToTargetBlock();
+        }
+    }
+
+    void BreakIsland(Transform islandBlock)
+    {
+        if (islandBlock != null)
+        {
+            Destroy(islandBlock.gameObject);
+            Debug.Log("Island block destroyed.");
         }
     }
 
@@ -50,97 +167,7 @@ public class EnemyBoat : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
         Debug.Log("Boat destroyed!");
-    }
-
-    Transform FindClosestIslandBlock()
-    {
-        GameObject[] islandBlocks = GameObject.FindGameObjectsWithTag("Island");
-
-        Transform closestBlock = null;
-        float closestDistance = Mathf.Infinity;
-        Vector3 currentPosition = transform.position;
-
-        foreach (GameObject blockObj in islandBlocks)
-        {
-            Transform block = blockObj.transform;
-            float distance = Vector3.Distance(currentPosition, block.position);
-            if (distance < closestDistance)
-            {
-                closestDistance = distance;
-                closestBlock = block;
-            }
-        }
-
-        return closestBlock;
-    }
-
-    IEnumerator MoveToTarget()
-    {
-        while (targetBlock != null && Vector3.Distance(transform.position, targetBlock.position) > 0.1f)
-        {
-            // Calculate direction to the target
-            Vector3 direction = (targetBlock.position - transform.position).normalized;
-
-            // Move towards the target
-            transform.position += direction * moveSpeed * Time.deltaTime;
-
-            // Update rotation to face the direction of movement
-            if (direction != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(-direction);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * moveSpeed);
-            }
-
-            yield return null;
-        }
-
-        if (targetBlock == null)
-        {
-            // The target block was destroyed before we reached it
-            Debug.Log("Target block destroyed before reaching it.");
-        }
-        else
-        {
-            // Reached the target block
-            Debug.Log("Boat reached the island block!");
-            StartCoroutine(AttackBlock());
-        }
-    }
-
-    IEnumerator AttackBlock()
-    {
-        float attackDuration = 5f; // Time to destroy the block
-        float elapsedTime = 0f;
-
-        Renderer blockRenderer = targetBlock.GetComponent<Renderer>();
-        if (blockRenderer == null)
-        {
-            Debug.LogError("Island block does not have a Renderer.");
-            yield break;
-        }
-
-        Color initialColor = blockRenderer.material.color;
-        Color damageColor = Color.red;
-
-        while (elapsedTime < attackDuration && targetBlock != null)
-        {
-            elapsedTime += Time.deltaTime;
-            // Visual feedback
-            blockRenderer.material.color = Color.Lerp(initialColor, damageColor, elapsedTime / attackDuration);
-            yield return null;
-        }
-
-        if (targetBlock != null)
-        {
-            // Destroy the block
-            Destroy(targetBlock.gameObject);
-            Debug.Log("Island block destroyed.");
-            targetBlock = null;
-        }
-
-        // Decide what to do next: Find a new target or stay in place
-        FindAndMoveToTargetBlock();
+        Destroy(gameObject);
     }
 }
