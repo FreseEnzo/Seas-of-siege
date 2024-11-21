@@ -10,8 +10,9 @@ public class EnemySpawner : MonoBehaviour
     public float breakTime = 5f;
     public float waterHeight = 0f;
 
-    public float seaWidth = 30f;
-    public float seaLength = 30f;
+    // Increased sea dimensions to ensure enemies spawn far from the island
+    public float seaWidth = 100f;   // Increased from 30f
+    public float seaLength = 100f;  // Increased from 30f
     public float seaHeight = 0f;
     public float recoverySpeed = 0.5f;
 
@@ -32,12 +33,12 @@ public class EnemySpawner : MonoBehaviour
                 islandBlocks = islandGenerator.GetIslandBlocks();
                 if (islandBlocks != null && islandBlocks.Length > 0)
                 {
-                    Debug.Log("Blocos da ilha recebidos pelo EnemySpawner.");
+                    Debug.Log("Island blocks received by EnemySpawner.");
                     return true;
                 }
                 else
                 {
-                    Debug.LogWarning("Aguardando blocos da ilha serem gerados...");
+                    Debug.LogWarning("Waiting for island blocks to be generated...");
                 }
             }
             return false;
@@ -57,10 +58,13 @@ public class EnemySpawner : MonoBehaviour
             if (targetBlock != null)
             {
                 GameObject enemy = Instantiate(enemyBoatPrefab, spawnPosition, Quaternion.identity);
+
                 Rigidbody rb = enemy.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
                     rb.useGravity = false;
+                    // Ensure collision detection is suitable for fast-moving objects
+                    rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
                 }
 
                 enemy.tag = "Enemy";
@@ -78,24 +82,33 @@ public class EnemySpawner : MonoBehaviour
 
     Vector3 GetRandomEdgePosition()
     {
-        float x = Random.Range(0, seaWidth);
-        float z = Random.Range(0, seaLength);
+        float distanceFromIsland = 50f; // Desired minimum distance from the island
 
-        bool onXEdge = Random.value > 0.5f;
-        if (onXEdge)
-        {
-            bool onLeftEdge = Random.value > 0.5f;
-            x = onLeftEdge ? 0 : seaWidth;
-            z = Random.Range(0, seaLength);
-        }
-        else
-        {
-            bool onBottomEdge = Random.value > 0.5f;
-            z = onBottomEdge ? 0 : seaLength;
-            x = Random.Range(0, seaWidth);
-        }
+        // Generate a random direction on the horizontal plane
+        Vector3 direction = Random.onUnitSphere;
+        direction.y = 0; // Keep direction horizontal
+        direction.Normalize();
 
-        return new Vector3(x, seaHeight, z);
+        // Calculate island center to spawn enemies relative to it
+        Vector3 islandCenter = GetIslandCenter();
+
+        // Position enemies at a set distance from the island center
+        Vector3 spawnPosition = islandCenter + direction * distanceFromIsland;
+        spawnPosition.y = seaHeight; // Ensure enemies spawn at sea level
+
+        return spawnPosition;
+    }
+
+    Vector3 GetIslandCenter()
+    {
+        // Calculate the average position of all island blocks to find the center
+        Vector3 center = Vector3.zero;
+        foreach (Transform block in islandBlocks)
+        {
+            center += block.position;
+        }
+        center /= islandBlocks.Length;
+        return center;
     }
 
     Transform GetClosestIslandBlock(Vector3 position)
@@ -118,49 +131,67 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator MoveEnemyToTarget(Transform enemy, Transform targetBlock)
     {
-        Vector3 startPosition = enemy.position;
-        Vector3 targetPosition = targetBlock.position;
-        targetPosition.y = waterHeight;
-
         Renderer blockRenderer = targetBlock.GetComponent<Renderer>();
         if (blockRenderer == null)
         {
-            Debug.LogError("Bloco da ilha não possui um Renderer.");
+            Debug.LogError("Island block does not have a Renderer.");
             yield break;
         }
 
         Color initialColor = blockRenderer.material.color;
         Color damageColor = Color.red;
         float timeAtTarget = 0f;
-        bool isAttacking = true;
 
-        while (enemy != null && isAttacking)
+        while (enemy != null)
         {
-            float currentDistance = Vector3.Distance(new Vector3(enemy.position.x, waterHeight, enemy.position.z), new Vector3(targetPosition.x, waterHeight, targetPosition.z));
+            // Calculate horizontal distance (ignore y)
+            float currentDistance = Vector2.Distance(
+                new Vector2(enemy.position.x, enemy.position.z),
+                new Vector2(targetBlock.position.x, targetBlock.position.z)
+            );
 
             if (currentDistance > stopDistance)
             {
-                Vector3 direction = (targetPosition - enemy.position).normalized;
+                // Move towards the target island block
+                Vector3 direction = (targetBlock.position - enemy.position);
+                direction.y = 0f; // Ignore vertical difference
+                direction.Normalize();
                 enemy.position += direction * moveSpeed * Time.deltaTime;
 
-                Quaternion targetRotation = Quaternion.LookRotation(-direction);
-                enemy.rotation = Quaternion.Slerp(enemy.rotation, targetRotation, Time.deltaTime * moveSpeed);
+                // Rotate enemy to face the movement direction
+                if (direction != Vector3.zero)
+                {
+                    Quaternion targetRotation = Quaternion.LookRotation(direction); 
+                    targetRotation *= Quaternion.Euler(0, -180f, 0);
+                    enemy.rotation = Quaternion.Slerp(enemy.rotation, targetRotation, Time.deltaTime * moveSpeed);
+                }
             }
             else
             {
-                timeAtTarget += Time.deltaTime;
+                // Enemy has reached the island block and starts attacking
+                Debug.Log("Enemy reached the target block, starting attack.");
 
+                timeAtTarget += Time.deltaTime;
+                Debug.Log($"Attacking block, timeAtTarget: {timeAtTarget}");
+
+                // Visual feedback: change island block color over time
                 blockRenderer.material.color = Color.Lerp(initialColor, damageColor, timeAtTarget / breakTime);
 
                 if (timeAtTarget >= breakTime)
                 {
+                    // Destroy the island block after breakTime
                     BreakIsland(targetBlock);
                     Transform newTarget = GetClosestIslandBlock(enemy.position);
                     if (newTarget != null)
                     {
-                        StartCoroutine(MoveEnemyToTarget(enemy, newTarget));
+                        // Continue moving to the next block
+                        StartCoroutine(MoveEnemyToTarget(enemy.transform, newTarget));
                     }
-                    Destroy(enemy.gameObject);
+                    else
+                    {
+                        // No more island blocks, destroy the enemy
+                        Destroy(enemy.gameObject);
+                    }
                     yield break;
                 }
             }
@@ -170,6 +201,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (enemy == null)
         {
+            // Start recovery if enemy is destroyed
             StartCoroutine(RecoverIsland(blockRenderer, initialColor));
         }
     }
@@ -179,25 +211,28 @@ public class EnemySpawner : MonoBehaviour
         if (System.Array.Exists(islandBlocks, block => block == islandBlock))
         {
             Destroy(islandBlock.gameObject);
+            // Update the list of island blocks
             islandBlocks = System.Array.FindAll(islandBlocks, block => block != islandBlock);
-            Debug.Log("Bloco da ilha destruído.");
+            Debug.Log("Island block destroyed.");
         }
         else
         {
-            Debug.LogWarning("Bloco da ilha não encontrado para destruição.");
+            Debug.LogWarning("Island block not found for destruction.");
         }
     }
 
     IEnumerator RecoverIsland(Renderer blockRenderer, Color initialColor)
     {
-        Color currentColor = blockRenderer.material.color;
-
-        while (blockRenderer.material.color != initialColor)
+        // Gradually restore the island block's color
+        while (blockRenderer != null && blockRenderer.material.color != initialColor)
         {
             blockRenderer.material.color = Color.Lerp(blockRenderer.material.color, initialColor, recoverySpeed * Time.deltaTime);
             yield return null;
         }
 
-        Debug.Log("Ilha recuperou sua cor.");
+        if (blockRenderer != null)
+        {
+            Debug.Log("Island recovered its color.");
+        }
     }
 }
